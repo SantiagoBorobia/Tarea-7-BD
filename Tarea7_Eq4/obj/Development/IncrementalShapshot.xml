@@ -1,0 +1,89 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Tarea7_Eq4</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>nhLoqbkL4a7qJvNZZB7psNg2gZU=30/11/2018 05:11:51 p. m.30/11/2018 05:04:50 p. m.</TimeStamp>
+        <ID>
+          <String>Food Mart</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>G+tAzyzNDFs0ejoyEIZ/FCst+gg=30/11/2018 06:11:46 p. m.30/11/2018 05:13:48 p. m.</TimeStamp>
+        <ID>
+          <String>Food Mart</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Wkfkqj0k7GUh/9IFcs6Rg71OYhg=30/11/2018 06:05:48 p. m.30/11/2018 05:17:42 p. m.</TimeStamp>
+        <ID>
+          <String>Customer</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>m3cM+acj8CuyD5Qwec+qTfsTHaI=30/11/2018 06:05:48 p. m.30/11/2018 05:17:42 p. m.</TimeStamp>
+        <ID>
+          <String>Store</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>cVwuOAGloCtTQElfnpSefiNrzyg=30/11/2018 05:44:21 p. m.30/11/2018 05:17:42 p. m.</TimeStamp>
+        <ID>
+          <String>Product</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>FragtcSu+zSdTnXvxSueaSFr6AA=30/11/2018 05:42:47 p. m.30/11/2018 05:17:42 p. m.</TimeStamp>
+        <ID>
+          <String>Time By Day</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>1viy6H1DtVlrLXLaZmhoVowpdj4=30/11/2018 06:11:46 p. m.30/11/2018 06:10:58 p. m.</TimeStamp>
+        <ID>
+          <String>Region</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>gxknEXQaMicsccDxLJHkRhMBQ+8=30/11/2018 06:14:54 p. m.30/11/2018 05:17:42 p. m.MkHJfzxWvcohWYiuk2EP5u1EIr4=30/11/2018 05:17:42 p. m.30/11/2018 05:17:42 p. m.</TimeStamp>
+        <ID>
+          <String>FoodMart</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>h4peVd+sD6gpqzY9Ry50Il3wYX8=21/11/2018 02:24:50 p. m.30/11/2018 05:04:51 p. m.</TimeStamp>
+      <ID>
+        <String>Tarea7_Eq4</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2018-12-01T00:16:10.806667Z</LastDeployed>
+</DeploymentSnapshot>
