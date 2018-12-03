@@ -61,7 +61,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>d5G2TlwpllDI2xMSivoDufbnd2M=03/12/2018 12:25:58 p. m.03/12/2018 11:47:53 a. m.MkHJfzxWvcohWYiuk2EP5u1EIr4=03/12/2018 11:47:53 a. m.03/12/2018 11:47:53 a. m.</TimeStamp>
+        <TimeStamp>cbiLEkZmYFKZqt/VxgIEqCBpIGc=03/12/2018 12:36:38 p. m.03/12/2018 11:47:53 a. m.MkHJfzxWvcohWYiuk2EP5u1EIr4=03/12/2018 11:47:53 a. m.03/12/2018 11:47:53 a. m.</TimeStamp>
         <ID>
           <String>FoodMart</String>
         </ID>
@@ -78,5 +78,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2018-12-03T18:26:03.2Z</LastDeployed>
+  <LastDeployed>2018-12-03T18:36:41.276667Z</LastDeployed>
 </DeploymentSnapshot>
