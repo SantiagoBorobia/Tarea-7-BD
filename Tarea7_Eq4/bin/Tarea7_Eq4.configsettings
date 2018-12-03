@@ -3,7 +3,7 @@
     <DataSources>
       <DataSource>
         <ID>Food Mart</ID>
-        <ConnectionString>Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\BD\Tarea7_Eq4\FoodMart.accdb</ConnectionString>
+        <ConnectionString>Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\BD\Tarea-7-BD\Tarea7_Eq4\FoodMart.accdb</ConnectionString>
         <ImpersonationInfo>
           <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateServiceAccount</ImpersonationMode>
           <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
@@ -22,9 +22,6 @@
       </Dimension>
       <Dimension>
         <ID>Time By Day</ID>
-      </Dimension>
-      <Dimension>
-        <ID>Region</ID>
       </Dimension>
     </Dimensions>
     <Cubes>

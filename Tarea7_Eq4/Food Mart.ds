@@ -3,7 +3,7 @@
   <Name>Food Mart</Name>
   <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
   <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
-  <ConnectionString>Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\BD\Tarea7_Eq4\FoodMart.accdb</ConnectionString>
+  <ConnectionString>Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\BD\Tarea-7-BD\Tarea7_Eq4\FoodMart.accdb</ConnectionString>
   <ConnectionStringSecurity>Unchanged</ConnectionStringSecurity>
   <ImpersonationInfo>
     <ImpersonationMode>ImpersonateServiceAccount</ImpersonationMode>

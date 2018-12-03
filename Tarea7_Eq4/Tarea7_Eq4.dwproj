@@ -35,10 +35,6 @@
       <Name>Time By Day.dim</Name>
       <FullPath>Time By Day.dim</FullPath>
     </ProjectItem>
-    <ProjectItem>
-      <Name>Region.dim</Name>
-      <FullPath>Region.dim</FullPath>
-    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
@@ -60,7 +56,7 @@
           <ConfigurationSetting>
             <Id>Food Mart</Id>
             <Name>Food Mart</Name>
-            <Value xsi:type="xsd:string">Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\BD\Tarea7_Eq4\FoodMart.accdb</Value>
+            <Value xsi:type="xsd:string">Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\BD\Tarea-7-BD\Tarea7_Eq4\FoodMart.accdb</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>

@@ -1,8 +1,8 @@
 ﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="10120647-28de-4f56-8023-948477cd35e8" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Food Mart</ID>
   <Name>Food Mart</Name>
-  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
@@ -14,7 +14,6 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
-      <Value></Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
@@ -274,7 +273,7 @@
       <xs:element name="Food_x0020_Mart" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="1fac7ae8-b50e-434e-b654-5ed849bfdd9f">
         <xs:complexType>
           <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element name="sales_fact_2008" msprop:design-time-name="f220b1d1-8f65-49a2-910a-a2533251433f" msprop:DbTableName="sales_fact_2008" msprop:FriendlyName="salesFact2008" msprop:TableType="Table">
+            <xs:element name="sales_fact_2008" msprop:design-time-name="f220b1d1-8f65-49a2-910a-a2533251433f" msprop:DbTableName="sales_fact_2008" msprop:TableType="Table" msprop:FriendlyName="salesFact2008">
               <xs:complexType>
                 <xs:sequence>
                   <xs:element name="product_id" msprop:design-time-name="a4188a87-e5fb-4df5-82b9-978c047d75ba" msprop:DbColumnName="product_id" msprop:FriendlyName="product_id" type="xs:int" minOccurs="0" />
@@ -288,7 +287,7 @@
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="time_by_day" msprop:design-time-name="b4136627-24f1-4c3a-b6d4-21a120bd4a18" msprop:DbTableName="time_by_day" msprop:FriendlyName="timeByDay" msprop:TableType="Table">
+            <xs:element name="time_by_day" msprop:design-time-name="b4136627-24f1-4c3a-b6d4-21a120bd4a18" msprop:DbTableName="time_by_day" msprop:TableType="Table" msprop:FriendlyName="timeByDay">
               <xs:complexType>
                 <xs:sequence>
                   <xs:element name="time_id" msprop:design-time-name="49c50c9e-f7ab-4ee2-a7a2-8747e64af978" msprop:DbColumnName="time_id" msprop:FriendlyName="time_id" type="xs:int" />
@@ -328,7 +327,7 @@
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="product" msprop:design-time-name="737eb812-314f-45e1-b0bd-0c7627745105" msprop:DbTableName="product" msprop:FriendlyName="product" msprop:TableType="Table">
+            <xs:element name="product" msprop:design-time-name="737eb812-314f-45e1-b0bd-0c7627745105" msprop:DbTableName="product" msprop:TableType="Table" msprop:FriendlyName="product">
               <xs:complexType>
                 <xs:sequence>
                   <xs:element name="product_class_id" msprop:design-time-name="d198754c-60cb-4d6c-b7d9-a94b180ab2da" msprop:DbColumnName="product_class_id" msprop:FriendlyName="product_class_id" type="xs:int" minOccurs="0" />
@@ -361,7 +360,7 @@
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="product_class" msprop:design-time-name="d45c6aba-8f8d-4ba8-bd88-e18e98a74cd5" msprop:DbTableName="product_class" msprop:FriendlyName="productClass" msprop:TableType="Table">
+            <xs:element name="product_class" msprop:design-time-name="d45c6aba-8f8d-4ba8-bd88-e18e98a74cd5" msprop:DbTableName="product_class" msprop:TableType="Table" msprop:FriendlyName="productClass">
               <xs:complexType>
                 <xs:sequence>
                   <xs:element name="product_class_id" msprop:design-time-name="65ec554c-6757-4b65-91b0-c1a372e8eda9" msprop:DbColumnName="product_class_id" msprop:FriendlyName="product_class_id" type="xs:int" />
@@ -396,7 +395,7 @@
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="customer" msprop:design-time-name="1c1e3c36-d0c0-4785-9862-e4104bfaa082" msprop:DbTableName="customer" msprop:FriendlyName="customer" msprop:TableType="Table">
+            <xs:element name="customer" msprop:design-time-name="1c1e3c36-d0c0-4785-9862-e4104bfaa082" msprop:DbTableName="customer" msprop:TableType="Table" msprop:FriendlyName="customer">
               <xs:complexType>
                 <xs:sequence>
                   <xs:element name="customer_id" msprop:design-time-name="0b5b40bc-b5c4-4c87-bff7-5f2f0bf4890d" msprop:DbColumnName="customer_id" msprop:FriendlyName="customer_id" type="xs:int" />
@@ -547,10 +546,17 @@
                     </xs:simpleType>
                   </xs:element>
                   <xs:element name="num_cars_owned" msprop:design-time-name="9ad7d610-11ce-4f56-841b-0dd07cc7b62a" msprop:DbColumnName="num_cars_owned" msprop:FriendlyName="num_cars_owned" type="xs:short" minOccurs="0" />
+                  <xs:element name="FullName" msdata:ReadOnly="true" msprop:Description="Nombre completo" msprop:ComputedColumnExpression="fname +&quot; &quot;+ lname" msprop:IsLogical="True" msprop:design-time-name="38f10124-a805-4380-85c9-2ef70e0bb25b" msprop:DbColumnName="FullName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="536870910" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="store" msprop:design-time-name="a97bc549-6dd8-4e59-bd8c-6707f7793119" msprop:DbTableName="store" msprop:FriendlyName="store" msprop:TableType="Table">
+            <xs:element name="store" msprop:design-time-name="a97bc549-6dd8-4e59-bd8c-6707f7793119" msprop:DbTableName="store" msprop:TableType="Table" msprop:FriendlyName="store">
               <xs:complexType>
                 <xs:sequence>
                   <xs:element name="store_id" msprop:design-time-name="5e39c05f-0540-469b-8be6-a89a20c216a7" msprop:DbColumnName="store_id" msprop:FriendlyName="store_id" type="xs:int" />
@@ -641,7 +647,7 @@
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="region" msprop:design-time-name="932cec57-5ed9-4ff2-aab8-4fb57b5555c5" msprop:DbTableName="region" msprop:FriendlyName="Region" msprop:TableType="Table">
+            <xs:element name="region" msprop:design-time-name="932cec57-5ed9-4ff2-aab8-4fb57b5555c5" msprop:DbTableName="region" msprop:TableType="Table" msprop:FriendlyName="Region">
               <xs:complexType>
                 <xs:sequence>
                   <xs:element name="region_id" msprop:design-time-name="17279e97-57bb-4a40-934b-ff3b260836a3" msprop:DbColumnName="region_id" msprop:FriendlyName="region_id" type="xs:int" />
@@ -722,21 +728,21 @@
           <xs:selector xpath=".//product" />
           <xs:field xpath="product_class_id" />
         </xs:keyref>
-        <xs:keyref name="time_by_daysales_fact_2008" refer="Constraint1">
+        <xs:keyref name="customersales_fact_2008" refer="customer_Constraint1">
           <xs:selector xpath=".//sales_fact_2008" />
-          <xs:field xpath="time_id" />
-        </xs:keyref>
-        <xs:keyref name="productsales_fact_2008" refer="product_Constraint1">
-          <xs:selector xpath=".//sales_fact_2008" />
-          <xs:field xpath="product_id" />
+          <xs:field xpath="customer_id" />
         </xs:keyref>
         <xs:keyref name="storesales_fact_2008" refer="store_Constraint1">
           <xs:selector xpath=".//sales_fact_2008" />
           <xs:field xpath="store_id" />
         </xs:keyref>
-        <xs:keyref name="customersales_fact_2008" refer="customer_Constraint1">
+        <xs:keyref name="productsales_fact_2008" refer="product_Constraint1">
           <xs:selector xpath=".//sales_fact_2008" />
-          <xs:field xpath="customer_id" />
+          <xs:field xpath="product_id" />
+        </xs:keyref>
+        <xs:keyref name="time_by_daysales_fact_2008" refer="Constraint1">
+          <xs:selector xpath=".//sales_fact_2008" />
+          <xs:field xpath="time_id" />
         </xs:keyref>
       </xs:element>
     </xs:schema>
