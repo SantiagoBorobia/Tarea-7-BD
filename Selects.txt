@@ -1,4 +1,11 @@
---a. 
+--a.Muestra las ventas (montos y unidades) de los productos vendidos en México de la categoría
+"Fruit".
+
+select {[Measures].[Unit Sales], [Measures].[Store Sales]} on columns, 
+[Product].[Product Category].&[Fruit]
+on rows
+from [FoodMart]
+where [Store].[Sales Country].&[Mexico]
 
 
 --b. Obtén por ciudad de los clientes las ventas (montos) de las tiendas de dicha ciudad. 
@@ -7,10 +14,14 @@ select
 non empty [Customer].[City].members on columns
 from [FoodMart]
  
---c.
 
+--c. Escribe los costos de las ventas por categoría del producto y por país. Especifica la medida
+en el where.
 
-
+select non empty [Product].[Product Category].members on columns,
+non empty [Store].[Sales Country].members on rows
+from [FoodMart] 
+where [Measures].[Store Cost] 
 
 
 --d. Muestra los montos de las ventas de los clientes de Orizaba y Merida de la categoría de productos 'Beer and Wine'. 
@@ -41,7 +52,13 @@ filter ([Product].[Product Category].members, [Measures].[Store Sales]>400 ) on 
 from [FoodMart]
 where [Customer].[City].&[Guadalajara]
 
---g.
+--g.Considerando a las ciudades de los clientes, obtén aquellas cuyas unidades vendidas
+-- superaron las 300 en la subcategoría de productos Bagels.
+
+select [Measures].[Unit Sales] on columns,
+non empty filter([Store].[Store City].children, [Measures].[Unit Sales]>300) on rows
+from [FoodMart]
+where [Product].[Product Subcategory].&[Bagels]
 
 
 --h. Lista los montos de ventas por país de las tiendas, ciudades de los clientes y distritos de las tiendas. 
@@ -50,6 +67,16 @@ select
 [Measures].[Store Sales] on columns,
 non empty ([Store].[Sales Country].members, [Customer].[City].members, [Store].[Sales District].members) on rows
 from [FoodMart]
+
+
+--i. Escribe las unidades vendidas en el tercer trimestre por departamento 
+-- de los productos, estados de los clientes y subcategorías de los productos. 
+-- Deben verse los elementos de cada uno de estos niveles.
+
+select non empty [Customer].[State Province].children on columns,
+non empty {[Product].[Product Subcategory].children * [Product].[Product Department].children} on rows
+from [FoodMart]
+where [Time By Day].[Quarter].&[Q3]
 
 
 --j. Muestra los costos de los productos por región de las tiendas y categorías de los mismos, 
