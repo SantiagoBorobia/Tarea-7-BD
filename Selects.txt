@@ -12,14 +12,23 @@ from [FoodMart]
 
 
 
+
 --d. Muestra los montos de las ventas de los clientes de Orizaba y Merida de la categoría de productos 'Beer and Wine'. 
 select
 [Measures].[Store Sales] on columns,
-{[Customer].[City].&[Orizaba], [Customer].[City].&[Merida]} on rows 
+non empty ([Customer].[Customer Name].members,{[Customer].[City].&[Orizaba], [Customer].[City].&[Merida]}) on rows 
 from [FoodMart]
 where [Product].[Product Category].&[Beer and Wine]
 
---e.
+
+--e. Lista el costo de los productos, por nombre de la marca, de la categoría “Bread” para USA. 
+--Utiliza la función Descendants
+
+select 
+[Measures].[Store Cost] on columns,
+non empty descendants([Product].[Brand Name]) on rows
+from [FoodMart]
+where ([Product].[Product Category].&[Bread], [Store].[Store Country].&[USA])
 
 
 
@@ -35,6 +44,21 @@ where [Customer].[City].&[Guadalajara]
 --g.
 
 
+--h. Lista los montos de ventas por país de las tiendas, ciudades de los clientes y distritos de las tiendas. 
+--Deben verse los elementos de cada uno de estos niveles. 
+select 
+[Measures].[Store Sales] on columns,
+non empty ([Store].[Sales Country].members, [Customer].[City].members, [Store].[Sales District].members) on rows
+from [FoodMart]
+
+
+--j. Muestra los costos de los productos por región de las tiendas y categorías de los mismos, 
+--tanto en el primero como en el segundo trimestres. Deben verse los elementos de cada uno de estos niveles. 
+select
+non empty [Store].[Sales Region].members on columns,
+non empty ([Product].[Product Category].members, {[Time By Day].[Quarter].[Q1], [Time By Day].[Quarter].[Q2]}) on rows
+from [FoodMart]
+where ([Measures].[Store Cost])
 
 
 
