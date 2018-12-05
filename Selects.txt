@@ -1,0 +1,42 @@
+--a. 
+
+
+--b. Obtén por ciudad de los clientes las ventas (montos) de las tiendas de dicha ciudad. 
+select
+[Measures].[Store Sales] on rows,
+non empty [Customer].[City].members on columns
+from [FoodMart]
+ 
+--c.
+
+
+
+
+--d. Muestra los montos de las ventas de los clientes de Orizaba y Merida de la categoría de productos 'Beer and Wine'. 
+select
+[Measures].[Store Sales] on columns,
+{[Customer].[City].&[Orizaba], [Customer].[City].&[Merida]} on rows 
+from [FoodMart]
+where [Product].[Product Category].&[Beer and Wine]
+
+--e.
+
+
+
+
+--f. Considerando a las categorías de los productos, 
+--muestra aquellas cuyos montos de ventas superaron los 400 en la ciudad de Guadalajara. 
+select
+[Measures].[Store Sales] on columns,
+filter ([Product].[Product Category].members, [Measures].[Store Sales]>400 ) on rows 
+from [FoodMart]
+where [Customer].[City].&[Guadalajara]
+
+--g.
+
+
+
+
+
+
+
